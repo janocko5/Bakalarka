@@ -1,0 +1,95 @@
+<?php
+include('zadanie.php');
+include('mirec.php')
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="sk" >
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Python</title>
+
+
+
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/ace.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/menu.css">
+
+
+</head>
+
+<body>
+<h1> Code </h1>
+
+<div id="editor">
+
+</div>
+
+
+<h1 id="console">Console</h1>
+
+<div id="editor1">
+
+
+</div>
+
+
+
+<script  src="js/index.js"></script>
+<script src="js/ace.js"  charset="utf-8"></script>
+
+
+<div id="circularMenu" class="circular-menu">
+
+    <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+        <i class="fa fa-plus"></i>
+    </a>
+
+    <menu class="items-wrapper">
+        <a href="#" class="menu-item fa fa-facebook"></a>
+        <a href="#" class="menu-item fa fa-twitter"></a>
+        <a href="#" class="menu-item fa fa-google-plus"></a>
+        <a href="login.php" class="menu-item fa fa-close"></a>
+    </menu>
+
+</div>
+
+<div id="circularMenu1" class="circular-menu circular-menu-left">
+
+    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <menu class="items-wrapper">
+        <a href="#" class="menu-item fa fa-home"></a>
+        <a href="#" class="menu-item fa fa-user"></a>
+        <a href="#" class="menu-item fa fa-pie-chart"></a>
+        <a href="#" class="menu-item fa fa-cog"></a>
+    </menu>
+
+</div>
+
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/python");
+
+
+
+    var editor1 = ace.edit("editor1");
+    editor1.setTheme("ace/theme/monokai");
+    editor1.session.setMode("ace/mode/python");
+
+</script>
+
+</body>
+
+</html>

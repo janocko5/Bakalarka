@@ -1,0 +1,106 @@
+<?php
+include('zadanie.php');
+include('mirec.php')
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="sk" >
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Python</title>
+
+
+
+    <link rel="stylesheet" href="css/button.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/menu.css">
+
+
+</head>
+
+<body>
+<h1> Code </h1>
+<table>
+    <tr>
+        <td>
+            <form method="post" action="#">
+            <textarea name="python-editor1" data-editor="python" data-gutter="1" rows="15" style="position: relative;left: 100px;width:1600px; height:500px"><?php if (!empty($_POST["python-editor1"])) {
+    echo $kod = $_POST["python-editor1"];
+} ?> </textarea>
+                <input  style="position: relative;top: 25px" type="submit" />
+            </form>
+        </td>
+    </tr>
+
+</table>
+
+
+<h1> Console</h1>
+<table>
+    <tr>
+        <td colspan="3">
+            <textarea name="python-editor" data-editor="python" data-gutter="2" rows="15" style="position: relative;left: 100px;width:1600px; height:500px"><?php
+                echo var_export($console['stdout']);
+                echo "error";
+                echo var_export($console['stderr']);
+                echo "return";
+                echo var_export($console['return']);
+                ?></textarea>
+        </td>
+    </tr>
+</table>
+
+
+
+<script  src="js/index.js"></script>
+
+
+<div id="circularMenu" class="circular-menu">
+
+    <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+        <i class="fa fa-plus"></i>
+    </a>
+
+    <menu class="items-wrapper">
+        <a href="#" class="menu-item fa fa-facebook"></a>
+        <a href="#" class="menu-item fa fa-twitter"></a>
+        <a href="#" class="menu-item fa fa-google-plus"></a>
+        <a href="login.php" class="menu-item fa fa-close"></a>
+    </menu>
+
+</div>
+
+<div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <menu class="items-wrapper">
+        <a href="#" class="menu-item fa fa-home"></a>
+        <a href="#" class="menu-item fa fa-user"></a>
+        <a href="#" class="menu-item fa fa-pie-chart"></a>
+        <a href="#" class="menu-item fa fa-cog"></a>
+    </menu>
+
+</div>
+
+<script>
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

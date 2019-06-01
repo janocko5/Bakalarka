@@ -1,0 +1,134 @@
+.editor {
+            position: absolute;
+            top: 75px;
+            right: 0;
+            bottom: 0;
+            left: 200px;
+            width:1500px;
+			height:500px
+        }
+
+        .editor1 {
+            position: absolute;
+            top: 670px;
+            right: 0;
+            bottom: 0;
+            left: 200px;
+			width:1500px; 
+			height:500px
+        }
+		
+		
+.editor1.active {
+            position: absolute;
+            top: 970px;
+            right: 0;
+            bottom: 0;
+            left: 200px;
+			width:1500px; 
+			height:500px
+        }
+		
+.editor.active {
+            position: absolute;
+            top: 375px;
+            right: 0;
+            bottom: 0;
+            left: 200px;
+            width:1500px;
+			height:500px
+        }
+		
+.console {
+	position: absolute;
+    top: 600px;
+	left: 75px;
+	color: #86ff05;
+}
+
+.console.active {
+	position: absolute;
+    top: 900px;
+	left: 75px;
+	color: #86ff05;
+}
+
+.run_button {
+	position: absolute;
+    top: 580px;
+	left: 1650px;
+}
+
+.run_button.active {
+	position: absolute;
+    top: 880px;
+	left: 1650px;
+}
+
+.code{
+	position: absolute;
+	color: #86ff05;
+}
+.code.active{
+	position: absolute;
+	top: 300px;
+	color: #86ff05;
+}
+
+.zadanie{
+	display: none;
+	position: absolute;
+	color: #86ff05;
+}
+.zadanie.active{
+	display: block;
+	position: absolute;
+	top: 10px;
+	color: #86ff05;
+}
+
+.test{
+	position: absolute;
+	left: 75px;
+	
+}
+.testy{
+	display: none;
+	position: absolute;
+	color: #86ff05;
+}
+
+.testy.active{
+	display: block;
+	position: absolute;
+	top: 10px;
+	color: #86ff05;
+}
+
+.zadan{
+	display: none;
+}
+
+.zadan.active{
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	width:1500px; 
+	height:270px;
+	background-color: grey;
+}
+
+.ztest{
+	display: none;
+}
+
+.ztest.active{
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	width:1500px; 
+	height:270px;
+	background-color: #939393;
+}
